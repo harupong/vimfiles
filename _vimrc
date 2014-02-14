@@ -1,16 +1,32 @@
+set encoding=utf-8
 set fileencodings=ucs-bom,iso-2022-jp,utf-8,cp932,euc-jp,default,latin
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
-"Colorscheme
-colorscheme molokai
-"set guifont=Consolas:h12
-
 " pathogen
 execute pathogen#infect()
 execute pathogen#helptags()
+
+"Colorscheme
+colorscheme solarized
+set background=dark
+
+"set guifontwide=VL\ Gothic:h11
+set guifontwide=MigMix\ 1M:h14
+"set guifontwide=Ricty:h12
+
+set guifont=MigMix\ 1M:h14
+"set guifont=Ricty:h12
+  "set guifont=Anonymous\ Pro:h11
+  "set guifont=Courier\ New:h11
+  "set guifont=MS\ Gothic:h11
+  "set guifont=VL\ Gothic:h11
+ "set guifont=Consolas:h14
+  "set guifont=Bitstream\ Vera\ Sans\ Mono:h11
+  "set guifont=Inconsolata:h12
+  "set guifont=Terminal:h10:cSHIFTJIS"set guifont=Consolas:h12
 
 "set line no, buffer, search, highlight, autoindent and more.
 syntax on                      " show syntax highlighting
@@ -88,7 +104,7 @@ function! WordCount(...)
     let cur = str2nr(matchstr(str, '\d\+'))
     let end = str2nr(matchstr(str, '\d\+\s*$'))
     if a:1 == 'char'
-      " $B$3$3$G(B($B2~9T%3!<%I?t(B*$B2~9T%3!<%I%5%$%:(B)$B$r(B'g<C-g>'$B$NJ8;z?t$+$i0z$/(B
+      " ‚±‚±‚Å(‰üsƒR[ƒh”*‰üsƒR[ƒhƒTƒCƒY)‚ğ'g<C-g>'‚Ì•¶š”‚©‚çˆø‚­
 
       let cr = &ff == 'dos' ? 2 : 1
       let cur -= cr * (line('.') - 1)
