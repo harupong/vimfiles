@@ -1,6 +1,6 @@
 _viminfo
 vim74/
-vimfiles/autoload
+vimfiles/autoload/*
 !vimfiles/autoload/pathogen.vim
 
 # Created by http://www.gitignore.io
