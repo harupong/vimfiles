@@ -63,6 +63,10 @@ set smartcase
 set viminfo+=n$VIM/_viminfo
 set mouse=a
 
+" dir for storing backupfiles(~) and swapfiles
+set directory=$VIM/vimfiles/backups
+set backupdir=$VIM/vimfiles/backups
+
 " Status line
 let &statusline = ''
 let &statusline .= '%3n '               " Buffer number
