@@ -14,10 +14,10 @@ colorscheme solarized
 set background=dark
 
 "set guifontwide=VL\ Gothic:h11
-set guifontwide=MigMix\ 1M:h14
+set guifontwide=MigMix\ 1M:h12
 "set guifontwide=Ricty:h12
 
-set guifont=MigMix\ 1M:h14
+set guifont=MigMix\ 1M:h12
 "set guifont=Ricty:h12
   "set guifont=Anonymous\ Pro:h11
   "set guifont=Courier\ New:h11
