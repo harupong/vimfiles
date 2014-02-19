@@ -62,6 +62,7 @@ set incsearch
 set smartcase
 set viminfo+=n$VIM/_viminfo
 set mouse=a
+set autochdir                 " change to the directory of the file automatically
 
 " dir for storing backupfiles(~) and swapfiles
 set directory=$VIM/vimfiles/backups
