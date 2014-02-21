@@ -7,3 +7,6 @@
 [submodule "vimfiles/bundle/vim-colors-github"]
 	path = vimfiles/bundle/vim-colors-github
 	url = https://github.com/croaky/vim-colors-github
+[submodule "vimfiles/bundle/dicwin-vim"]
+	path = vimfiles/bundle/dicwin-vim
+	url = https://github.com/koron/dicwin-vim
