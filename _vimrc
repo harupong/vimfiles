@@ -1,5 +1,9 @@
+" encodings
 set encoding=utf-8
 set fileencodings=ucs-bom,iso-2022-jp,utf-8,cp932,euc-jp,default,latin
+set ambiwidth=double
+
+" It may not be 'compatible', but I kinda like it MS way
 set nocompatible
 source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
