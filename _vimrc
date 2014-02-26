@@ -72,6 +72,14 @@ set autochdir                 " change to the directory of the file automaticall
 set directory=$VIM/vimfiles/backups
 set backupdir=$VIM/vimfiles/backups
 
+" keymapping
+nnoremap h <Left>
+nnoremap j gjzz
+nnoremap k gkzz
+nnoremap l <Right>
+nnoremap <Down> gj
+nnoremap <Up>   gk
+
 " Status line
 let &statusline = ''
 let &statusline .= '%3n '               " Buffer number
