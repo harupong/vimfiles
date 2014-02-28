@@ -10,3 +10,6 @@
 [submodule "vimfiles/bundle/dicwin-vim"]
 	path = vimfiles/bundle/dicwin-vim
 	url = https://github.com/koron/dicwin-vim
+[submodule "vimfiles/doc"]
+	path = vimfiles/doc
+	url = https://harupong@bitbucket.org/harupong/vimdoc.git
