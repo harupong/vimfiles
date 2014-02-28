@@ -97,6 +97,17 @@ if version >= 700
   au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
 endif
 
+"" highlight YAML front matter inside markdown documents as comments
+"" https://bitbucket.org/estin/dotfiles/src/2c7c2151f410044f7320a32c1d54eed1ae9e2207/vim/.vimrc
+"" See also: http://www.codeography.com/2010/02/20/making-vim-play-nice-with-jekylls-yaml-front-matter.html
+augroup markdown_files "{{{
+    au!
+
+    " Render YAML front matter inside Textile documents as comments
+    autocmd filetype mkd syntax region frontmatter start=/\%^---$/ end=/^---$/
+    autocmd filetype mkd highlight link frontmatter Comment
+augroup end "}}}
+
 " wordcount
 augroup WordCount
   autocmd!
