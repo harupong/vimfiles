@@ -34,7 +34,6 @@ set guifont=MigMix\ 1M:h12
 
 "set line no, buffer, search, highlight, autoindent and more.
 syntax on                      " show syntax highlighting
-set nocompatible               " NO COMPATIBLE!!
 filetype plugin indent on      " filetype plugin
 set backspace=indent,eol,start " Allow backspacing over autoindent, line brakes and the start of insert.
 set whichwrap&                 " Allow h, l, <Left> and <Right> to move to the previous/next line.
@@ -73,10 +72,8 @@ set directory=$VIM/vimfiles/backups
 set backupdir=$VIM/vimfiles/backups
 
 " keymapping
-nnoremap h <Left>
 nnoremap j gjzz
 nnoremap k gkzz
-nnoremap l <Right>
 nnoremap <Down> gj
 nnoremap <Up>   gk
 
