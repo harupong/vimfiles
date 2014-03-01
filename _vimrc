@@ -17,6 +17,9 @@ execute pathogen#helptags()
 colorscheme solarized
 set background=dark
 
+" filetype settings
+autocmd BufRead *.txt set tw=0  "Do NOT RETURN if txt
+
 "set guifontwide=VL\ Gothic:h11
 set guifontwide=MigMix\ 1M:h12
 "set guifontwide=Ricty:h12
