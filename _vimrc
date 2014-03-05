@@ -91,10 +91,10 @@ let &statusline .= 'wc:%{WordCount()} ' " Wordcount https://github.com/fuenor/vi
 let &statusline .= '%l,%c%V'            " Line number, Column number, Virtual column number
 let &statusline .= '%4P'                " Percentage through file of displayed window.
 
-"" highlight the status bar when in insert mode
+" highlight the status bar when in insert mode, for 'github' colorscheme
 if version >= 700
-  au InsertEnter * hi StatusLine ctermfg=235 ctermbg=2
-  au InsertLeave * hi StatusLine ctermbg=240 ctermfg=12
+  au InsertEnter * hi StatusLine guifg=#000000 guibg=#CDCDFD
+  au InsertLeave * hi StatusLine guifg=#404040 guibg=#BBBBBB
 endif
 
 "" highlight YAML front matter inside markdown documents as comments
