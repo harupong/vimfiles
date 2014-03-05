@@ -66,6 +66,9 @@ nnoremap k gkzz
 nnoremap <Down> gj
 nnoremap <Up>   gk
 
+  "" go to next line when transcribing
+  inoremap <f12> <esc>jj$a
+
 " Status line
 let &statusline = ''
 let &statusline .= '%3n '               " Buffer number
