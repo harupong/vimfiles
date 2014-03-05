@@ -13,27 +13,13 @@ behave mswin
 execute pathogen#infect()
 execute pathogen#helptags()
 
-"Colorscheme
-colorscheme solarized
-set background=dark
+"Fonts and Colorscheme
+colorscheme github
+set guifont=MigMix\ 1M:h12
+set guifontwide=MigMix\ 1M:h12
 
 " filetype settings
 autocmd BufRead *.txt set tw=0  "Do NOT RETURN if txt
-
-"set guifontwide=VL\ Gothic:h11
-set guifontwide=MigMix\ 1M:h12
-"set guifontwide=Ricty:h12
-
-set guifont=MigMix\ 1M:h12
-"set guifont=Ricty:h12
-  "set guifont=Anonymous\ Pro:h11
-  "set guifont=Courier\ New:h11
-  "set guifont=MS\ Gothic:h11
-  "set guifont=VL\ Gothic:h11
- "set guifont=Consolas:h14
-  "set guifont=Bitstream\ Vera\ Sans\ Mono:h11
-  "set guifont=Inconsolata:h12
-  "set guifont=Terminal:h10:cSHIFTJIS"set guifont=Consolas:h12
 
 "set line no, buffer, search, highlight, autoindent and more.
 syntax on                      " show syntax highlighting
