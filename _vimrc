@@ -67,7 +67,7 @@ nnoremap <Down> gj
 nnoremap <Up>   gk
 
   "" go to next line when transcribing
-  inoremap <f12> <esc>jj$a
+  inoremap <f12> <esc>jj$zza
 
 " Status line
 let &statusline = ''
