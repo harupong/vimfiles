@@ -1,0 +1,53 @@
+" magic spell
+scriptencoding utf-8
+syntax off
+set hidden
+set clipboard=unnamed
+
+" color and fonts
+colorscheme default
+set guifont=MigMix\ 1M:h10
+set guifontwide=MigMix\ 1M:h10
+
+" filetype settings
+autocmd BufRead *.txt set tw=0  "Do NOT RETURN if txt
+
+" hj to move the cursor display-linewise
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+
+"" window splitting
+"" http://qiita.com/tekkoc/items/98adcadfa4bdc8b5a6ca
+nnoremap s <Nop>
+nnoremap sj <C-w>j
+nnoremap sk <C-w>k
+nnoremap sl <C-w>l
+nnoremap sh <C-w>h
+nnoremap sv :<C-u>vs<CR>
+nnoremap ss :<C-u>sp<CR>
+
+" Status line
+function! SetStatusLine()
+  let &statusline = ''
+  let &statusline .= '%3n '                                                             " Buffer number
+  let &statusline .= '%<%f '                                                            " Filename
+  let &statusline .= '%m%r%h%w'                                                         " Modified flag, Readonly flag, Preview flag
+  let &statusline .= '%{"[" . (&fileencoding != "" ? &fileencoding : &encoding) . "]"}' "fileencoding
+  let &statusline .= '%{"[" . &fileformat . "]"}'                                       "fileformat
+  let &statusline .= '%{"[" . &filetype . "]"}'                                         "filetype
+  let &statusline .= '%{"[" . (&scrollbind == 0 ? "noscb" : "scb") . "]"}' "fileencoding
+  let &statusline .= '%='                                                               " Spaces
+  let &statusline .= '%l,%c%V'                                                          " Line number, Column number, Virtual column number
+  let &statusline .= '%4P'                                                              " Percentage through file of displayed window.
+endfunction
+call SetStatusLine()
+
+" DIR for storing vim temp files
+set directory=$HOME/vimfiles/vimtemp "swapfiles
+set backupdir=$HOME/vimfiles/vimtemp "backupfiles(.~)
+set undodir=$HOME/vimfiles/vimtemp   "undofiles(.un~)
+
+" Translation related
+source $HOME/vimfiles/translation.vim
